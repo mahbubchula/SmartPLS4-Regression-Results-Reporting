@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Regression in SmartPLS 4.0</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #5f6d7a;
+      --line: #d9e2ec;
+      --wash: #f5f8fb;
+      --panel: #ffffff;
+      --teal: #0f766e;
+      --blue: #1d4ed8;
+      --violet: #6d28d9;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--wash);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .hero {
+      min-height: 74vh;
+      display: grid;
+      align-items: center;
+      padding: 56px 24px 92px;
+      color: white;
+      background:
+        linear-gradient(90deg, rgba(15, 23, 42, .96), rgba(15, 23, 42, .72)),
+        url("assets/smartpls-regression-hero.png") center/cover no-repeat;
+    }
+    .hero-inner { width: min(1120px, 100%); margin: 0 auto; }
+    h1 {
+      margin: 0 0 18px;
+      max-width: 900px;
+      font-size: clamp(40px, 7vw, 78px);
+      line-height: .98;
+      letter-spacing: 0;
+    }
+    .subtitle {
+      max-width: 820px;
+      margin: 0 0 28px;
+      color: #e7f0ff;
+      font-size: 20px;
+    }
+    .meta { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 30px; }
+    .pill {
+      border: 1px solid rgba(255,255,255,.28);
+      border-radius: 999px;
+      padding: 8px 12px;
+      background: rgba(255,255,255,.08);
+      color: white;
+      font-size: 14px;
+    }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .button {
+      display: inline-flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-weight: 700;
+      border: 1px solid transparent;
+    }
+    .button.primary { background: white; color: #0f172a; }
+    .button.secondary { border-color: rgba(255,255,255,.4); color: white; }
+    .section {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 58px 0;
+    }
+    .section h2 { margin: 0 0 14px; font-size: 34px; line-height: 1.1; }
+    .lead { max-width: 820px; color: var(--muted); font-size: 18px; margin: 0 0 28px; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 20px; }
+    .card h3 { margin: 0 0 8px; font-size: 19px; }
+    .card p { margin: 0; color: var(--muted); }
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      display: table;
+    }
+    .table th, .table td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    .table th { background: #eef4fb; }
+    .table tr:last-child td { border-bottom: 0; }
+    footer { border-top: 1px solid var(--line); padding: 32px 20px; color: var(--muted); text-align: center; }
+    @media (max-width: 840px) {
+      .grid { grid-template-columns: 1fr; }
+      .hero { min-height: auto; }
+      .table { display: block; overflow-x: auto; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>Regression in SmartPLS 4.0</h1>
+      <p class="subtitle">A practical course for SmartPLS regression, bootstrapping, PLS-SEM results assessment, and thesis/journal-style reporting.</p>
+      <div class="meta">
+        <span class="pill">12 modules</span>
+        <span class="pill">6 practical labs</span>
+        <span class="pill">Result checklists</span>
+        <span class="pill">Reporting templates</span>
+      </div>
+      <div class="actions">
+        <a class="button primary" href="README.md">Open Course</a>
+        <a class="button secondary" href="syllabus.md">Syllabus</a>
+        <a class="button secondary" href="https://github.com/mahbubchula/SmartPLS4-Regression-Results-Reporting">GitHub Repo</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>What You Will Practice</h2>
+      <p class="lead">The course follows the real SmartPLS workflow: import data, build the model, run regression or PLS-SEM, assess outputs, export tables, and write publishable results.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>SmartPLS Regression</h3>
+          <p>Run single and multiple regression with standardized and unstandardized coefficients, diagnostics, and robust standard errors.</p>
+        </article>
+        <article class="card">
+          <h3>Bootstrapping</h3>
+          <p>Use bootstrap standard errors, confidence intervals, t-values, and p-values for final significance assessment.</p>
+        </article>
+        <article class="card">
+          <h3>Reporting</h3>
+          <p>Write clear results sections with tables, assessment criteria, interpretations, and limitations.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Curriculum</h2>
+      <table class="table">
+        <thead>
+          <tr><th>Week</th><th>Module</th><th>Outcome</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td><a href="modules/01-smartpls-regression-workflow.md">SmartPLS Regression Workflow</a></td><td>Choose the correct SmartPLS analysis route.</td></tr>
+          <tr><td>2</td><td><a href="modules/02-data-preparation.md">Data Preparation</a></td><td>Prepare clean CSV data and codebook.</td></tr>
+          <tr><td>3</td><td><a href="modules/03-building-regression-model.md">Building a Regression Model</a></td><td>Draw dependent, independent, and control variables.</td></tr>
+          <tr><td>4</td><td><a href="modules/04-running-linear-regression.md">Running Linear Regression</a></td><td>Estimate single and multiple regression.</td></tr>
+          <tr><td>5</td><td><a href="modules/05-assessing-regression-results.md">Assessing Regression Results</a></td><td>Interpret coefficients, R-square, and diagnostics.</td></tr>
+          <tr><td>6</td><td><a href="modules/06-regression-bootstrapping.md">Regression Bootstrapping</a></td><td>Use bootstrap inference for final reporting.</td></tr>
+          <tr><td>7</td><td><a href="modules/07-reporting-regression-results.md">Reporting Regression Results</a></td><td>Write thesis and journal-ready output.</td></tr>
+          <tr><td>8</td><td><a href="modules/08-plssem-measurement-model.md">PLS-SEM Measurement Model</a></td><td>Assess reliability and validity.</td></tr>
+          <tr><td>9</td><td><a href="modules/09-plssem-structural-model.md">PLS-SEM Structural Model</a></td><td>Assess paths, VIF, R-square, and f-square.</td></tr>
+          <tr><td>10</td><td><a href="modules/10-prediction-plspredict.md">Prediction and PLSpredict</a></td><td>Assess predictive performance.</td></tr>
+          <tr><td>11</td><td><a href="modules/11-common-reviewer-problems.md">Common Reviewer Problems</a></td><td>Avoid common SmartPLS reporting weaknesses.</td></tr>
+          <tr><td>12</td><td><a href="modules/12-capstone-smartpls-report.md">Capstone SmartPLS Report</a></td><td>Complete a full analysis report.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>Start the Course</h2>
+      <p class="lead">Begin with the syllabus and Lab 1. Use the templates and checklists while exporting SmartPLS results.</p>
+      <div class="actions">
+        <a class="button primary" style="background:#0f172a;color:white" href="syllabus.md">Syllabus</a>
+        <a class="button primary" style="background:#0f766e;color:white" href="labs/lab01-import-data-project.md">Lab 1</a>
+        <a class="button primary" style="background:#1d4ed8;color:white" href="templates/regression-results-report-template.md">Report Template</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Regression in SmartPLS 4.0. Created by Mahbub Hassan.
+  </footer>
+</body>
+</html>
