@@ -16,6 +16,19 @@ This course covers two practical SmartPLS 4 workflows:
 
 The course is intentionally practical. Learners follow SmartPLS menu steps, export results, fill assessment sheets, and write results in a publishable format.
 
+## Paper-Based Case Study Track
+
+This course now includes a dedicated paper-based track built around the shared 2026 SmartPLS software tutorial:
+
+- [Paper-based learning track](paper-guide/README.md)
+- [Simple explanation of the paper](paper-guide/paper-explainer.md)
+- [Six-stage regression workflow](paper-guide/six-stage-regression-workflow.md)
+- [HBAT-style variable map](case-study/hbat-variable-map.md)
+- [SmartPLS click paths for linear and logistic regression](case-study/smartpls-click-paths.md)
+- [Results assessment workbook](case-study/results-assessment-workbook.md)
+
+Use this track if your main goal is to learn SmartPLS 4 regression exactly in the style of the published tutorial paper.
+
 ## Learning Outcomes
 
 By the end of the course, learners should be able to:
@@ -48,6 +61,12 @@ By the end of the course, learners should be able to:
 | 11 | [Common Reviewer Problems](modules/11-common-reviewer-problems.md) | Fix reporting and interpretation weaknesses |
 | 12 | [Capstone SmartPLS Report](modules/12-capstone-smartpls-report.md) | Complete a full SmartPLS analysis report |
 
+Optional paper-based extension:
+
+| Module | Topic | Main Outcome |
+|---|---|---|
+| 13 | [Logistic Regression in SmartPLS 4](modules/13-logistic-regression-smartpls.md) | Run and report binary-outcome regression |
+
 ## Practical Labs
 
 | Lab | Topic | File |
@@ -62,10 +81,12 @@ By the end of the course, learners should be able to:
 ## Included Materials
 
 - SmartPLS-ready synthetic dataset
+- HBAT-style synthetic dataset based on the paper's variable structure
 - Codebook
 - Step-by-step labs
 - Result assessment checklists
 - Regression reporting templates
+- Logistic regression reporting template
 - PLS-SEM reporting templates
 - Export-result tracking sheets
 - Python benchmark script for checking regression estimates outside SmartPLS
@@ -79,6 +100,17 @@ By the end of the course, learners should be able to:
 4. Start with [Lab 1](labs/lab01-import-data-project.md).
 5. Use the templates in `templates/` while reporting your results.
 
+For the paper-based track, import:
+
+```text
+datasets/hbat_smartpls_regression_case.csv
+```
+
+Then follow:
+
+- [SmartPLS Click Path Guide](case-study/smartpls-click-paths.md)
+- [Optional Module 13: Logistic Regression in SmartPLS 4](modules/13-logistic-regression-smartpls.md)
+
 Optional Python benchmark:
 
 ```bash
@@ -86,6 +118,7 @@ python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 python scripts/benchmark_regression.py
+python scripts/benchmark_hbat_case.py
 ```
 
 ## Important Note

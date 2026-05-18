@@ -8,7 +8,8 @@
 | 2 | Linear regression model |
 | 3 | Regression assessment and bootstrapping |
 | 4 | PLS-SEM results assessment |
-| 5 | Capstone SmartPLS report |
+| 5 | Paper-based HBAT SmartPLS case |
+| 6 | Capstone SmartPLS report |
 
 ## Submission Rule
 
