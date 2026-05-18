@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample Regression Results Write-Up | SmartPLS 4 Regression Course</title>
+  <link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="../index.html">Regression in SmartPLS 4.0</a>
+      <nav class="top-links" aria-label="Primary navigation">
+        <a href="../syllabus.html">Syllabus</a>
+        <a href="../modules/01-smartpls-regression-workflow.html">Modules</a>
+        <a href="../paper-guide/README.html">Paper Track</a>
+        <a href="https://github.com/mahbubchula/SmartPLS4-Regression-Results-Reporting">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <div class="page-shell">
+
+      <aside class="sidebar">
+        <p class="sidebar-title">Course Navigation</p>
+        <nav>
+        <a href="../index.html">Course Home</a>
+        <a href="../syllabus.html">Syllabus</a>
+        <a href="../README.html">Course README</a>
+        <a href="../modules/01-smartpls-regression-workflow.html">Module 1</a>
+        <a href="../modules/05-assessing-regression-results.html">Module 5</a>
+        <a href="../modules/07-reporting-regression-results.html">Module 7</a>
+        <a href="../modules/13-logistic-regression-smartpls.html">Module 13</a>
+        <a href="../labs/lab01-import-data-project.html">Lab 1</a>
+        <a href="../paper-guide/README.html">Paper Track</a>
+        <a href="../case-study/results-assessment-workbook.html">Assessment Workbook</a>
+        <a href="../templates/regression-results-report-template.html">Report Template</a>
+        </nav>
+      </aside>
+    <main class="lesson">
+<h1 id="sample-regression-results-write-up">Sample Regression Results Write-Up</h1>
+<p>This sample uses the synthetic training dataset and the optional Python benchmark. Use it as a writing model, not as real empirical evidence.</p>
+<h2 id="model-description">Model Description</h2>
+<p>A multiple linear regression model was estimated to examine predictors of satisfaction with a digital learning platform. Satisfaction was regressed on usefulness, ease of use, trust, service quality, age, experience, and gender. The same model can be built and estimated in SmartPLS 4 using the regression algorithm.</p>
+<h2 id="example-results-paragraph">Example Results Paragraph</h2>
+<p>The model explained 53.9% of the variance in satisfaction (<code>R2 = 0.539</code>, adjusted <code>R2 = 0.518</code>). Usefulness was positively associated with satisfaction (<code>b = 0.324</code>, <code>p &lt; 0.001</code>), indicating that higher perceived usefulness was linked with higher satisfaction, holding the other predictors constant. Ease of use (<code>b = 0.315</code>, <code>p &lt; 0.001</code>), trust (<code>b = 0.269</code>, <code>p &lt; 0.001</code>), and service quality (<code>b = 0.376</code>, <code>p &lt; 0.001</code>) were also positive and statistically significant predictors. Age showed a negative association with satisfaction (<code>b = -0.417</code>, <code>p = 0.007</code>), while experience was positively associated with satisfaction (<code>b = 1.798</code>, <code>p = 0.018</code>). Gender was not statistically significant (<code>p = 0.143</code>).</p>
+<h2 id="example-diagnostic-statement">Example Diagnostic Statement</h2>
+<p>The QQ plot and residual diagnostics should be inspected before final reporting. If heteroscedasticity or influential observations are suspected, HC3 or HC4 robust standard errors should be considered and reported. In the benchmark model, HC3 robust standard errors did not materially change the substantive interpretation of the main predictors.</p>
+<h2 id="example-reporting-caveat">Example Reporting Caveat</h2>
+<p>Because the example dataset is cross-sectional and synthetic, results should be interpreted as associations, not causal effects. In a real thesis or journal paper, causal language would require a stronger research design and explicit assumptions.</p>
+    </main>
+  </div>
+  <footer class="page-footer">
+    Regression in SmartPLS 4.0. Created by Mahbub Hassan.
+  </footer>
+</body>
+</html>

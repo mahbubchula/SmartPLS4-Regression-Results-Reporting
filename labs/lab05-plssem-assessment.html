@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab 5: PLS-SEM Measurement and Structural Assessment | SmartPLS 4 Regression Course</title>
+  <link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="../index.html">Regression in SmartPLS 4.0</a>
+      <nav class="top-links" aria-label="Primary navigation">
+        <a href="../syllabus.html">Syllabus</a>
+        <a href="../modules/01-smartpls-regression-workflow.html">Modules</a>
+        <a href="../paper-guide/README.html">Paper Track</a>
+        <a href="https://github.com/mahbubchula/SmartPLS4-Regression-Results-Reporting">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <div class="page-shell">
+
+      <aside class="sidebar">
+        <p class="sidebar-title">Course Navigation</p>
+        <nav>
+        <a href="../index.html">Course Home</a>
+        <a href="../syllabus.html">Syllabus</a>
+        <a href="../README.html">Course README</a>
+        <a href="../modules/01-smartpls-regression-workflow.html">Module 1</a>
+        <a href="../modules/05-assessing-regression-results.html">Module 5</a>
+        <a href="../modules/07-reporting-regression-results.html">Module 7</a>
+        <a href="../modules/13-logistic-regression-smartpls.html">Module 13</a>
+        <a href="../labs/lab01-import-data-project.html">Lab 1</a>
+        <a href="../paper-guide/README.html">Paper Track</a>
+        <a href="../case-study/results-assessment-workbook.html">Assessment Workbook</a>
+        <a href="../templates/regression-results-report-template.html">Report Template</a>
+        </nav>
+      </aside>
+    <main class="lesson">
+<h1 id="lab-5-pls-sem-measurement-and-structural-assessment">Lab 5: PLS-SEM Measurement and Structural Assessment</h1>
+<h2 id="goal">Goal</h2>
+<p>Practice PLS-SEM assessment using the same dataset's indicator variables.</p>
+<h2 id="construct-setup">Construct Setup</h2>
+<p>Reflective constructs:</p>
+<table>
+<thead>
+<tr>
+<th>Construct</th>
+<th>Indicators</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PU</td>
+<td>PU1, PU2, PU3</td>
+</tr>
+<tr>
+<td>PEOU</td>
+<td>PEOU1, PEOU2, PEOU3</td>
+</tr>
+<tr>
+<td>TRUST</td>
+<td>TR1, TR2, TR3</td>
+</tr>
+<tr>
+<td>SERVICE_QUALITY</td>
+<td>SQ1, SQ2, SQ3</td>
+</tr>
+<tr>
+<td>SATISFACTION</td>
+<td>SAT1, SAT2, SAT3</td>
+</tr>
+</tbody>
+</table>
+<p>Structural paths:</p>
+<pre><code class="language-text">PU -&gt; SATISFACTION
+PEOU -&gt; SATISFACTION
+TRUST -&gt; SATISFACTION
+SERVICE_QUALITY -&gt; SATISFACTION
+</code></pre>
+<p>Optional path:</p>
+<pre><code class="language-text">PEOU -&gt; PU
+</code></pre>
+<h2 id="measurement-model-assessment">Measurement Model Assessment</h2>
+<p>Export and assess:</p>
+<ul>
+<li>Outer loadings</li>
+<li>Cronbach's alpha</li>
+<li>rho_A</li>
+<li>Composite reliability rho_C</li>
+<li>AVE</li>
+<li>HTMT</li>
+<li>Fornell-Larcker criterion</li>
+</ul>
+<h2 id="structural-model-assessment">Structural Model Assessment</h2>
+<p>Export and assess:</p>
+<ul>
+<li>VIF</li>
+<li>Path coefficients</li>
+<li>t-values and p-values from bootstrapping</li>
+<li>R-square</li>
+<li>Adjusted R-square</li>
+<li>f-square</li>
+</ul>
+<h2 id="deliverable">Deliverable</h2>
+<p>Submit:</p>
+<ul>
+<li>Measurement model table</li>
+<li>Structural model table</li>
+<li>One paragraph explaining whether hypotheses are supported</li>
+</ul>
+<h2 id="next-lab">Next Lab</h2>
+<p>Continue to <a href="lab06-reporting-results.html">Lab 6</a>.</p>
+    </main>
+  </div>
+  <footer class="page-footer">
+    Regression in SmartPLS 4.0. Created by Mahbub Hassan.
+  </footer>
+</body>
+</html>

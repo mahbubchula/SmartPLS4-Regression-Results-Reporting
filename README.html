@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Regression in SmartPLS 4.0: Practical Analysis, Results Assessment, and Reporting | SmartPLS 4 Regression Course</title>
+  <link rel="stylesheet" href="assets/course.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="index.html">Regression in SmartPLS 4.0</a>
+      <nav class="top-links" aria-label="Primary navigation">
+        <a href="syllabus.html">Syllabus</a>
+        <a href="modules/01-smartpls-regression-workflow.html">Modules</a>
+        <a href="paper-guide/README.html">Paper Track</a>
+        <a href="https://github.com/mahbubchula/SmartPLS4-Regression-Results-Reporting">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <div class="page-shell">
+
+      <aside class="sidebar">
+        <p class="sidebar-title">Course Navigation</p>
+        <nav>
+        <a href="index.html">Course Home</a>
+        <a href="syllabus.html">Syllabus</a>
+        <a href="README.html">Course README</a>
+        <a href="modules/01-smartpls-regression-workflow.html">Module 1</a>
+        <a href="modules/05-assessing-regression-results.html">Module 5</a>
+        <a href="modules/07-reporting-regression-results.html">Module 7</a>
+        <a href="modules/13-logistic-regression-smartpls.html">Module 13</a>
+        <a href="labs/lab01-import-data-project.html">Lab 1</a>
+        <a href="paper-guide/README.html">Paper Track</a>
+        <a href="case-study/results-assessment-workbook.html">Assessment Workbook</a>
+        <a href="templates/regression-results-report-template.html">Report Template</a>
+        </nav>
+      </aside>
+    <main class="lesson">
+<h1 id="regression-in-smartpls-40-practical-analysis-results-assessment-and-reporting">Regression in SmartPLS 4.0: Practical Analysis, Results Assessment, and Reporting</h1>
+<p>Complete practical course for learning how to run, assess, interpret, and report regression-based analysis in SmartPLS 4.</p>
+<p>Created by Mahbub Hassan for students, thesis researchers, and applied quantitative researchers who need a step-by-step SmartPLS workflow from data preparation to final reporting.</p>
+<h2 id="course-scope">Course Scope</h2>
+<p>This course covers two practical SmartPLS 4 workflows:</p>
+<ol>
+<li>
+<p><strong>Observed-variable regression in SmartPLS 4</strong><br>
+   Single and multiple linear regression using measured variables, including coefficients, standardized coefficients, significance testing, robust standard errors, diagnostics, and reporting.</p>
+</li>
+<li>
+<p><strong>PLS-SEM structural path assessment</strong><br>
+   Regression-like path modeling with latent constructs, including measurement model assessment, structural model assessment, bootstrapping, R-square, effect size, predictive relevance, PLSpredict, and reporting.</p>
+</li>
+</ol>
+<p>The course is intentionally practical. Learners follow SmartPLS menu steps, export results, fill assessment sheets, and write results in a publishable format.</p>
+<h2 id="paper-based-case-study-track">Paper-Based Case Study Track</h2>
+<p>This course now includes a dedicated paper-based track built around the shared 2026 SmartPLS software tutorial:</p>
+<ul>
+<li><a href="paper-guide/README.html">Paper-based learning track</a></li>
+<li><a href="paper-guide/paper-explainer.html">Simple explanation of the paper</a></li>
+<li><a href="paper-guide/six-stage-regression-workflow.html">Six-stage regression workflow</a></li>
+<li><a href="case-study/hbat-variable-map.html">HBAT-style variable map</a></li>
+<li><a href="case-study/smartpls-click-paths.html">SmartPLS click paths for linear and logistic regression</a></li>
+<li><a href="case-study/results-assessment-workbook.html">Results assessment workbook</a></li>
+</ul>
+<p>Use this track if your main goal is to learn SmartPLS 4 regression exactly in the style of the published tutorial paper.</p>
+<h2 id="learning-outcomes">Learning Outcomes</h2>
+<p>By the end of the course, learners should be able to:</p>
+<ul>
+<li>Prepare a clean dataset for SmartPLS 4.</li>
+<li>Build a regression model in the SmartPLS graphical interface.</li>
+<li>Run SmartPLS linear regression and regression bootstrapping.</li>
+<li>Interpret unstandardized and standardized coefficients.</li>
+<li>Assess p-values, t-values, standard errors, and confidence intervals.</li>
+<li>Use HC3/HC4 robust standard errors when appropriate.</li>
+<li>Inspect QQ plots and regression diagnostic output.</li>
+<li>Assess PLS-SEM measurement models using loadings, reliability, AVE, Fornell-Larcker, and HTMT.</li>
+<li>Assess structural models using VIF, path coefficients, R-square, f-square, bootstrapping, and predictive assessment.</li>
+<li>Write professional result sections for thesis, journal paper, or report submission.</li>
+</ul>
+<h2 id="course-structure">Course Structure</h2>
+<table>
+<thead>
+<tr>
+<th>Week</th>
+<th>Module</th>
+<th>Main Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="modules/01-smartpls-regression-workflow.html">SmartPLS Regression Workflow</a></td>
+<td>Understand regression options in SmartPLS 4</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="modules/02-data-preparation.html">Data Preparation</a></td>
+<td>Prepare CSV/XLSX data and codebook</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="modules/03-building-regression-model.html">Building a Regression Model</a></td>
+<td>Draw dependent, independent, and control variables</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="modules/04-running-linear-regression.html">Running Linear Regression</a></td>
+<td>Estimate single and multiple regression</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="modules/05-assessing-regression-results.html">Assessing Regression Results</a></td>
+<td>Interpret coefficients, R-square, and diagnostics</td>
+</tr>
+<tr>
+<td>6</td>
+<td><a href="modules/06-regression-bootstrapping.html">Regression Bootstrapping</a></td>
+<td>Test coefficient significance using bootstrapping</td>
+</tr>
+<tr>
+<td>7</td>
+<td><a href="modules/07-reporting-regression-results.html">Reporting Regression Results</a></td>
+<td>Write tables and result paragraphs</td>
+</tr>
+<tr>
+<td>8</td>
+<td><a href="modules/08-plssem-measurement-model.html">PLS-SEM Measurement Model</a></td>
+<td>Assess reliability and validity</td>
+</tr>
+<tr>
+<td>9</td>
+<td><a href="modules/09-plssem-structural-model.html">PLS-SEM Structural Model</a></td>
+<td>Assess paths, VIF, R-square, f-square, and significance</td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="modules/10-prediction-plspredict.html">Prediction and PLSpredict</a></td>
+<td>Assess predictive performance</td>
+</tr>
+<tr>
+<td>11</td>
+<td><a href="modules/11-common-reviewer-problems.html">Common Reviewer Problems</a></td>
+<td>Fix reporting and interpretation weaknesses</td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="modules/12-capstone-smartpls-report.html">Capstone SmartPLS Report</a></td>
+<td>Complete a full SmartPLS analysis report</td>
+</tr>
+</tbody>
+</table>
+<p>Optional paper-based extension:</p>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Topic</th>
+<th>Main Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>13</td>
+<td><a href="modules/13-logistic-regression-smartpls.html">Logistic Regression in SmartPLS 4</a></td>
+<td>Run and report binary-outcome regression</td>
+</tr>
+</tbody>
+</table>
+<h2 id="practical-labs">Practical Labs</h2>
+<table>
+<thead>
+<tr>
+<th>Lab</th>
+<th>Topic</th>
+<th>File</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Import dataset and create project</td>
+<td><a href="labs/lab01-import-data-project.html">Lab 1</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Build and run a SmartPLS regression model</td>
+<td><a href="labs/lab02-linear-regression.html">Lab 2</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Assess regression output</td>
+<td><a href="labs/lab03-results-assessment.html">Lab 3</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Run regression bootstrapping</td>
+<td><a href="labs/lab04-regression-bootstrapping.html">Lab 4</a></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Assess PLS-SEM measurement and structural results</td>
+<td><a href="labs/lab05-plssem-assessment.html">Lab 5</a></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Write the final results section</td>
+<td><a href="labs/lab06-reporting-results.html">Lab 6</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="included-materials">Included Materials</h2>
+<ul>
+<li>SmartPLS-ready synthetic dataset</li>
+<li>HBAT-style synthetic dataset based on the paper's variable structure</li>
+<li>Codebook</li>
+<li>Step-by-step labs</li>
+<li>Result assessment checklists</li>
+<li>Regression reporting templates</li>
+<li>Logistic regression reporting template</li>
+<li>PLS-SEM reporting templates</li>
+<li>Export-result tracking sheets</li>
+<li>Python benchmark script for checking regression estimates outside SmartPLS</li>
+<li>GitHub Pages course homepage</li>
+</ul>
+<h2 id="quick-start">Quick Start</h2>
+<ol>
+<li>Download or clone this repository.</li>
+<li>Open SmartPLS 4.</li>
+<li>Import <code>datasets/smartpls_regression_training_data.csv</code>.</li>
+<li>Start with <a href="labs/lab01-import-data-project.html">Lab 1</a>.</li>
+<li>Use the templates in <code>templates/</code> while reporting your results.</li>
+</ol>
+<p>For the paper-based track, import:</p>
+<pre><code class="language-text">datasets/hbat_smartpls_regression_case.csv
+</code></pre>
+<p>Then follow:</p>
+<ul>
+<li><a href="case-study/smartpls-click-paths.html">SmartPLS Click Path Guide</a></li>
+<li><a href="modules/13-logistic-regression-smartpls.html">Optional Module 13: Logistic Regression in SmartPLS 4</a></li>
+</ul>
+<p>Optional Python benchmark:</p>
+<pre><code class="language-bash">python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+python scripts/benchmark_regression.py
+python scripts/benchmark_hbat_case.py
+</code></pre>
+<h2 id="important-note">Important Note</h2>
+<p>SmartPLS is proprietary software. This repository provides teaching materials, datasets, templates, and workflow guidance. It does not include SmartPLS software or a license.</p>
+<h2 id="official-smartpls-references-used">Official SmartPLS References Used</h2>
+<ul>
+<li><a href="https://www.smartpls.com/documentation/algorithms-and-techniques/regression/">SmartPLS Regression documentation</a></li>
+<li><a href="https://www.smartpls.com/documentation/algorithms-and-techniques/regression-bootstrapping/">SmartPLS Regression Bootstrapping documentation</a></li>
+<li><a href="https://smartpls.com/documentation/algorithms-and-techniques/pls/">SmartPLS PLS-SEM Algorithm documentation</a></li>
+<li><a href="https://www.smartpls.com/documentation/algorithms-and-techniques/predict/">SmartPLS PLSpredict documentation</a></li>
+<li><a href="https://www.smartpls.com/documentation/algorithms-and-techniques/">SmartPLS Algorithms and Techniques</a></li>
+</ul>
+<h2 id="citation">Citation</h2>
+<p>When reporting analyses conducted with SmartPLS, cite SmartPLS as recommended by the software provider:</p>
+<p>Ringle, C. M., Wende, S., &amp; Becker, J.-M. (2024). SmartPLS 4. SmartPLS. https://www.smartpls.com</p>
+<h2 id="license">License</h2>
+<p>Course text and teaching materials are intended for open teaching and learning with attribution. Code examples are released under the MIT License.</p>
+    </main>
+  </div>
+  <footer class="page-footer">
+    Regression in SmartPLS 4.0. Created by Mahbub Hassan.
+  </footer>
+</body>
+</html>

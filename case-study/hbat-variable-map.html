@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HBAT-Style Case Study Variable Map | SmartPLS 4 Regression Course</title>
+  <link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="../index.html">Regression in SmartPLS 4.0</a>
+      <nav class="top-links" aria-label="Primary navigation">
+        <a href="../syllabus.html">Syllabus</a>
+        <a href="../modules/01-smartpls-regression-workflow.html">Modules</a>
+        <a href="../paper-guide/README.html">Paper Track</a>
+        <a href="https://github.com/mahbubchula/SmartPLS4-Regression-Results-Reporting">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <div class="page-shell">
+
+      <aside class="sidebar">
+        <p class="sidebar-title">Course Navigation</p>
+        <nav>
+        <a href="../index.html">Course Home</a>
+        <a href="../syllabus.html">Syllabus</a>
+        <a href="../README.html">Course README</a>
+        <a href="../modules/01-smartpls-regression-workflow.html">Module 1</a>
+        <a href="../modules/05-assessing-regression-results.html">Module 5</a>
+        <a href="../modules/07-reporting-regression-results.html">Module 7</a>
+        <a href="../modules/13-logistic-regression-smartpls.html">Module 13</a>
+        <a href="../labs/lab01-import-data-project.html">Lab 1</a>
+        <a href="../paper-guide/README.html">Paper Track</a>
+        <a href="../case-study/results-assessment-workbook.html">Assessment Workbook</a>
+        <a href="../templates/regression-results-report-template.html">Report Template</a>
+        </nav>
+      </aside>
+    <main class="lesson">
+<h1 id="hbat-style-case-study-variable-map">HBAT-Style Case Study Variable Map</h1>
+<p>This course includes a synthetic HBAT-style dataset for SmartPLS regression practice:</p>
+<pre><code class="language-text">datasets/hbat_smartpls_regression_case.csv
+</code></pre>
+<p>The variable structure follows the paper's teaching case, but the values are synthetic.</p>
+<h2 id="classification-variables">Classification Variables</h2>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Meaning</th>
+<th>Coding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X1</td>
+<td>Customer type</td>
+<td>1 = short relationship, 2 = medium relationship, 3 = long relationship</td>
+</tr>
+<tr>
+<td>X2</td>
+<td>Industry type</td>
+<td>0 = magazine industry, 1 = newsprint industry</td>
+</tr>
+<tr>
+<td>X3</td>
+<td>Firm size</td>
+<td>0 = small firm, 1 = large firm</td>
+</tr>
+<tr>
+<td>X4</td>
+<td>Region</td>
+<td>0 = USA/North America, 1 = outside North America</td>
+</tr>
+<tr>
+<td>X5</td>
+<td>Distribution system</td>
+<td>0 = indirect, 1 = direct</td>
+</tr>
+</tbody>
+</table>
+<h2 id="perception-variables">Perception Variables</h2>
+<p>All perception variables use a 0 to 10 scale.</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X6</td>
+<td>Product quality</td>
+</tr>
+<tr>
+<td>X7</td>
+<td>E-commerce activities or website</td>
+</tr>
+<tr>
+<td>X8</td>
+<td>Technical support</td>
+</tr>
+<tr>
+<td>X9</td>
+<td>Complaint resolution</td>
+</tr>
+<tr>
+<td>X10</td>
+<td>Advertising</td>
+</tr>
+<tr>
+<td>X11</td>
+<td>Product line</td>
+</tr>
+<tr>
+<td>X12</td>
+<td>Salesforce image</td>
+</tr>
+<tr>
+<td>X13</td>
+<td>Competitive pricing</td>
+</tr>
+<tr>
+<td>X14</td>
+<td>Warranty and claims</td>
+</tr>
+<tr>
+<td>X15</td>
+<td>New products</td>
+</tr>
+<tr>
+<td>X16</td>
+<td>Ordering and billing</td>
+</tr>
+<tr>
+<td>X17</td>
+<td>Price flexibility</td>
+</tr>
+<tr>
+<td>X18</td>
+<td>Delivery speed</td>
+</tr>
+</tbody>
+</table>
+<h2 id="outcome-variables">Outcome Variables</h2>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Meaning</th>
+<th>Scale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X19</td>
+<td>Customer satisfaction</td>
+<td>0 to 10</td>
+</tr>
+<tr>
+<td>X20</td>
+<td>Likelihood of recommending HBAT</td>
+<td>0 to 10</td>
+</tr>
+<tr>
+<td>X21</td>
+<td>Likelihood of future purchase</td>
+<td>0 to 10</td>
+</tr>
+<tr>
+<td>X22</td>
+<td>Percentage of purchases from HBAT</td>
+<td>0 to 100</td>
+</tr>
+<tr>
+<td>X23</td>
+<td>Future relationship consideration</td>
+<td>0 = no, 1 = yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="linear-regression-model-for-practice">Linear Regression Model for Practice</h2>
+<p>Use customer satisfaction as the dependent variable:</p>
+<pre><code class="language-text">X19 &lt;- X6 + X7 + X9 + X11 + X12
+</code></pre>
+<p>This mirrors the paper's multiple linear regression teaching model.</p>
+<h2 id="logistic-regression-model-for-practice">Logistic Regression Model for Practice</h2>
+<p>Use region as the binary dependent variable:</p>
+<pre><code class="language-text">X4 &lt;- X6 + X7 + X8 + X9 + X10 + X11 + X12 + X13 + X14 + X15 + X16 + X17 + X18
+</code></pre>
+<p>This mirrors the paper's logistic regression teaching model.</p>
+    </main>
+  </div>
+  <footer class="page-footer">
+    Regression in SmartPLS 4.0. Created by Mahbub Hassan.
+  </footer>
+</body>
+</html>

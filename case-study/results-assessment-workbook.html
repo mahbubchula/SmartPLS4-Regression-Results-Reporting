@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Results Assessment Workbook | SmartPLS 4 Regression Course</title>
+  <link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="../index.html">Regression in SmartPLS 4.0</a>
+      <nav class="top-links" aria-label="Primary navigation">
+        <a href="../syllabus.html">Syllabus</a>
+        <a href="../modules/01-smartpls-regression-workflow.html">Modules</a>
+        <a href="../paper-guide/README.html">Paper Track</a>
+        <a href="https://github.com/mahbubchula/SmartPLS4-Regression-Results-Reporting">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <div class="page-shell">
+
+      <aside class="sidebar">
+        <p class="sidebar-title">Course Navigation</p>
+        <nav>
+        <a href="../index.html">Course Home</a>
+        <a href="../syllabus.html">Syllabus</a>
+        <a href="../README.html">Course README</a>
+        <a href="../modules/01-smartpls-regression-workflow.html">Module 1</a>
+        <a href="../modules/05-assessing-regression-results.html">Module 5</a>
+        <a href="../modules/07-reporting-regression-results.html">Module 7</a>
+        <a href="../modules/13-logistic-regression-smartpls.html">Module 13</a>
+        <a href="../labs/lab01-import-data-project.html">Lab 1</a>
+        <a href="../paper-guide/README.html">Paper Track</a>
+        <a href="../case-study/results-assessment-workbook.html">Assessment Workbook</a>
+        <a href="../templates/regression-results-report-template.html">Report Template</a>
+        </nav>
+      </aside>
+    <main class="lesson">
+<h1 id="results-assessment-workbook">Results Assessment Workbook</h1>
+<p>Use this workbook after running the HBAT-style case in SmartPLS.</p>
+<h2 id="part-1-linear-regression-model">Part 1: Linear Regression Model</h2>
+<p>Model:</p>
+<pre><code class="language-text">X19 &lt;- X6 + X7 + X9 + X11 + X12
+</code></pre>
+<h3 id="overall-fit">Overall Fit</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>SmartPLS Result</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F-test or ANOVA significance</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>R-square</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Adjusted R-square</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Durbin-Watson</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="collinearity">Collinearity</h3>
+<table>
+<thead>
+<tr>
+<th>Predictor</th>
+<th style="text-align: right;">VIF</th>
+<th>Condition Index Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X6</td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>X7</td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>X9</td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>X11</td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>X12</td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="coefficients">Coefficients</h3>
+<table>
+<thead>
+<tr>
+<th>Predictor</th>
+<th style="text-align: right;">b</th>
+<th style="text-align: right;">beta</th>
+<th style="text-align: right;">t</th>
+<th style="text-align: right;">p</th>
+<th>95% CI</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X6</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>X7</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>X9</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>X11</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>X12</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="assumptions">Assumptions</h3>
+<table>
+<thead>
+<tr>
+<th>Assumption</th>
+<th>SmartPLS Evidence</th>
+<th>Decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Linearity</td>
+<td>Predicted vs residual; predicted vs actual</td>
+<td></td>
+</tr>
+<tr>
+<td>Homoscedasticity</td>
+<td>Predicted vs residual; Breusch-Pagan</td>
+<td></td>
+</tr>
+<tr>
+<td>Independence</td>
+<td>Residual autocorrelation; Durbin-Watson</td>
+<td></td>
+</tr>
+<tr>
+<td>Normality</td>
+<td>QQ plot; residual histogram</td>
+<td></td>
+</tr>
+<tr>
+<td>Collinearity</td>
+<td>VIF; condition index</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="part-2-logistic-regression-model">Part 2: Logistic Regression Model</h2>
+<p>Model:</p>
+<pre><code class="language-text">X4 &lt;- X6 + X7 + X8 + X9 + X10 + X11 + X12 + X13 + X14 + X15 + X16 + X17 + X18
+</code></pre>
+<h3 id="fit-summary">Fit Summary</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Null Model</th>
+<th style="text-align: right;">Estimated Model</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Log-likelihood</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>Deviance</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>AIC</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>BIC</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pseudo-r-square">Pseudo R-Square</h3>
+<table>
+<thead>
+<tr>
+<th>Measure</th>
+<th style="text-align: right;">Value</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>McFadden's R-square</td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>Cox and Snell's R-square</td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>Nagelkerke's R-square</td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="classification">Classification</h3>
+<table>
+<thead>
+<tr>
+<th>Classification Item</th>
+<th style="text-align: right;">Value</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Correctly classified group 0</td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>Correctly classified group 1</td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>Overall classification accuracy</td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="logistic-coefficients">Logistic Coefficients</h3>
+<table>
+<thead>
+<tr>
+<th>Predictor</th>
+<th style="text-align: right;">Coefficient</th>
+<th style="text-align: right;">Wald</th>
+<th style="text-align: right;">p</th>
+<th style="text-align: right;">Odds Ratio</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X6</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>X7</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>X8</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>X9</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>X10</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>X11</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>X12</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>X13</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>X14</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>X15</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>X16</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>X17</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>X18</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="final-interpretation-prompts">Final Interpretation Prompts</h2>
+<ol>
+<li>Which predictors matter most in the linear model?</li>
+<li>Does the linear model explain a meaningful amount of satisfaction variance?</li>
+<li>Which logistic predictors significantly separate region groups?</li>
+<li>Are odds ratios interpreted correctly?</li>
+<li>What limitations should be stated?</li>
+</ol>
+    </main>
+  </div>
+  <footer class="page-footer">
+    Regression in SmartPLS 4.0. Created by Mahbub Hassan.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PLS-SEM Results Report Template | SmartPLS 4 Regression Course</title>
+  <link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="../index.html">Regression in SmartPLS 4.0</a>
+      <nav class="top-links" aria-label="Primary navigation">
+        <a href="../syllabus.html">Syllabus</a>
+        <a href="../modules/01-smartpls-regression-workflow.html">Modules</a>
+        <a href="../paper-guide/README.html">Paper Track</a>
+        <a href="https://github.com/mahbubchula/SmartPLS4-Regression-Results-Reporting">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <div class="page-shell">
+
+      <aside class="sidebar">
+        <p class="sidebar-title">Course Navigation</p>
+        <nav>
+        <a href="../index.html">Course Home</a>
+        <a href="../syllabus.html">Syllabus</a>
+        <a href="../README.html">Course README</a>
+        <a href="../modules/01-smartpls-regression-workflow.html">Module 1</a>
+        <a href="../modules/05-assessing-regression-results.html">Module 5</a>
+        <a href="../modules/07-reporting-regression-results.html">Module 7</a>
+        <a href="../modules/13-logistic-regression-smartpls.html">Module 13</a>
+        <a href="../labs/lab01-import-data-project.html">Lab 1</a>
+        <a href="../paper-guide/README.html">Paper Track</a>
+        <a href="../case-study/results-assessment-workbook.html">Assessment Workbook</a>
+        <a href="../templates/regression-results-report-template.html">Report Template</a>
+        </nav>
+      </aside>
+    <main class="lesson">
+<h1 id="pls-sem-results-report-template">PLS-SEM Results Report Template</h1>
+<h2 id="software-and-estimation">Software and Estimation</h2>
+<p>The PLS-SEM analysis was conducted using SmartPLS 4. The PLS-SEM algorithm was used to estimate the model, and bootstrapping with <code>[number]</code> subsamples was used to assess significance.</p>
+<h2 id="measurement-model-assessment">Measurement Model Assessment</h2>
+<p>The reflective measurement model was assessed using indicator loadings, internal consistency reliability, convergent validity, and discriminant validity.</p>
+<h3 id="reliability-and-convergent-validity">Reliability and Convergent Validity</h3>
+<table>
+<thead>
+<tr>
+<th>Construct</th>
+<th style="text-align: right;">Loading Range</th>
+<th style="text-align: right;">Cronbach's Alpha</th>
+<th style="text-align: right;">rho_A</th>
+<th style="text-align: right;">rho_C</th>
+<th style="text-align: right;">AVE</th>
+<th>Decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PU</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>PEOU</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>TRUST</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>SERVICE_QUALITY</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr>
+<td>SATISFACTION</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="discriminant-validity">Discriminant Validity</h3>
+<p>HTMT values were below <code>[0.85/0.90]</code>, supporting discriminant validity.</p>
+<h2 id="structural-model-assessment">Structural Model Assessment</h2>
+<p>Predictor collinearity was assessed using VIF. All VIF values were <code>[below/above]</code> the selected threshold of <code>[threshold]</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Hypothesis</th>
+<th>Path</th>
+<th style="text-align: right;">beta</th>
+<th style="text-align: right;">t</th>
+<th style="text-align: right;">p</th>
+<th>95% CI</th>
+<th>Decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H1</td>
+<td>PU -&gt; SATISFACTION</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>H2</td>
+<td>PEOU -&gt; SATISFACTION</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>H3</td>
+<td>TRUST -&gt; SATISFACTION</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>H4</td>
+<td>SERVICE_QUALITY -&gt; SATISFACTION</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="explanatory-power">Explanatory Power</h2>
+<p>The model explained <code>[R2]</code> of the variance in <code>[endogenous construct]</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Endogenous Construct</th>
+<th style="text-align: right;">R2</th>
+<th style="text-align: right;">Adjusted R2</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SATISFACTION</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="prediction-assessment">Prediction Assessment</h2>
+<p>PLSpredict was used/not used because <code>[reason]</code>. The Q2_predict values were <code>[positive/non-positive]</code>, and RMSE/MAE comparisons indicated <code>[interpretation]</code>.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>The structural results indicate that <code>[summary of supported hypotheses]</code>. The results should be interpreted in light of <code>[limitations]</code>.</p>
+    </main>
+  </div>
+  <footer class="page-footer">
+    Regression in SmartPLS 4.0. Created by Mahbub Hassan.
+  </footer>
+</body>
+</html>

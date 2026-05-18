@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Module 8: PLS-SEM Measurement Model | SmartPLS 4 Regression Course</title>
+  <link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="../index.html">Regression in SmartPLS 4.0</a>
+      <nav class="top-links" aria-label="Primary navigation">
+        <a href="../syllabus.html">Syllabus</a>
+        <a href="../modules/01-smartpls-regression-workflow.html">Modules</a>
+        <a href="../paper-guide/README.html">Paper Track</a>
+        <a href="https://github.com/mahbubchula/SmartPLS4-Regression-Results-Reporting">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <div class="page-shell">
+
+      <aside class="sidebar">
+        <p class="sidebar-title">Course Navigation</p>
+        <nav>
+        <a href="../index.html">Course Home</a>
+        <a href="../syllabus.html">Syllabus</a>
+        <a href="../README.html">Course README</a>
+        <a href="../modules/01-smartpls-regression-workflow.html">Module 1</a>
+        <a href="../modules/05-assessing-regression-results.html">Module 5</a>
+        <a href="../modules/07-reporting-regression-results.html">Module 7</a>
+        <a href="../modules/13-logistic-regression-smartpls.html">Module 13</a>
+        <a href="../labs/lab01-import-data-project.html">Lab 1</a>
+        <a href="../paper-guide/README.html">Paper Track</a>
+        <a href="../case-study/results-assessment-workbook.html">Assessment Workbook</a>
+        <a href="../templates/regression-results-report-template.html">Report Template</a>
+        </nav>
+      </aside>
+    <main class="lesson">
+<h1 id="module-8-pls-sem-measurement-model">Module 8: PLS-SEM Measurement Model</h1>
+<h2 id="purpose">Purpose</h2>
+<p>When variables are latent constructs measured by indicators, results assessment starts with the measurement model. Do not interpret structural paths before measurement quality is acceptable.</p>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>After this module, learners should be able to:</p>
+<ul>
+<li>Distinguish reflective and formative measurement.</li>
+<li>Assess indicator reliability.</li>
+<li>Assess internal consistency reliability.</li>
+<li>Assess convergent validity.</li>
+<li>Assess discriminant validity.</li>
+</ul>
+<h2 id="reflective-measurement-assessment">Reflective Measurement Assessment</h2>
+<p>Typical assessment sequence:</p>
+<ol>
+<li>Indicator loadings</li>
+<li>Internal consistency reliability</li>
+<li>Convergent validity</li>
+<li>Discriminant validity</li>
+</ol>
+<h2 id="indicator-loadings">Indicator Loadings</h2>
+<p>Common guideline:</p>
+<pre><code class="language-text">Outer loading &gt;= 0.708
+</code></pre>
+<p>Lower loadings require judgment. Do not delete indicators mechanically. Consider theory, reliability, AVE, and content validity.</p>
+<h2 id="reliability">Reliability</h2>
+<p>Report:</p>
+<ul>
+<li>Cronbach's alpha</li>
+<li>rho_A</li>
+<li>Composite reliability rho_C</li>
+</ul>
+<p>Common guideline:</p>
+<pre><code class="language-text">0.70 to 0.95 is usually acceptable
+</code></pre>
+<p>Very high reliability may indicate redundant items.</p>
+<h2 id="convergent-validity">Convergent Validity</h2>
+<p>Use average variance extracted:</p>
+<pre><code class="language-text">AVE &gt;= 0.50
+</code></pre>
+<p>This means the construct explains at least half of the variance of its indicators on average.</p>
+<h2 id="discriminant-validity">Discriminant Validity</h2>
+<p>Use:</p>
+<ul>
+<li>HTMT</li>
+<li>Fornell-Larcker criterion</li>
+<li>Cross-loadings when needed</li>
+</ul>
+<p>Common HTMT guideline:</p>
+<pre><code class="language-text">HTMT &lt; 0.85
+</code></pre>
+<p>or:</p>
+<pre><code class="language-text">HTMT &lt; 0.90 for conceptually similar constructs
+</code></pre>
+<p>Bootstrap confidence intervals can be used for HTMT assessment.</p>
+<h2 id="reporting-template">Reporting Template</h2>
+<pre><code class="language-text">The reflective measurement model was assessed using indicator loadings, internal consistency reliability, convergent validity, and discriminant validity. All retained indicators loaded above ..., composite reliability values ranged from ... to ..., and AVE values exceeded 0.50. HTMT values were below the selected threshold, supporting discriminant validity.
+</code></pre>
+<h2 id="lab">Lab</h2>
+<p>Complete <a href="../labs/lab05-plssem-assessment.html">Lab 5: Assess PLS-SEM measurement and structural results</a>.</p>
+<h2 id="checklist">Checklist</h2>
+<p>Use <a href="../checklists/measurement-model-checklist.html">Measurement Model Checklist</a>.</p>
+<h2 id="next-module">Next Module</h2>
+<p>Continue to <a href="09-plssem-structural-model.html">Module 9: PLS-SEM Structural Model</a>.</p>
+    </main>
+  </div>
+  <footer class="page-footer">
+    Regression in SmartPLS 4.0. Created by Mahbub Hassan.
+  </footer>
+</body>
+</html>

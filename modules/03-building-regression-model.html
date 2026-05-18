@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Module 3: Building a Regression Model | SmartPLS 4 Regression Course</title>
+  <link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="../index.html">Regression in SmartPLS 4.0</a>
+      <nav class="top-links" aria-label="Primary navigation">
+        <a href="../syllabus.html">Syllabus</a>
+        <a href="../modules/01-smartpls-regression-workflow.html">Modules</a>
+        <a href="../paper-guide/README.html">Paper Track</a>
+        <a href="https://github.com/mahbubchula/SmartPLS4-Regression-Results-Reporting">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <div class="page-shell">
+
+      <aside class="sidebar">
+        <p class="sidebar-title">Course Navigation</p>
+        <nav>
+        <a href="../index.html">Course Home</a>
+        <a href="../syllabus.html">Syllabus</a>
+        <a href="../README.html">Course README</a>
+        <a href="../modules/01-smartpls-regression-workflow.html">Module 1</a>
+        <a href="../modules/05-assessing-regression-results.html">Module 5</a>
+        <a href="../modules/07-reporting-regression-results.html">Module 7</a>
+        <a href="../modules/13-logistic-regression-smartpls.html">Module 13</a>
+        <a href="../labs/lab01-import-data-project.html">Lab 1</a>
+        <a href="../paper-guide/README.html">Paper Track</a>
+        <a href="../case-study/results-assessment-workbook.html">Assessment Workbook</a>
+        <a href="../templates/regression-results-report-template.html">Report Template</a>
+        </nav>
+      </aside>
+    <main class="lesson">
+<h1 id="module-3-building-a-regression-model">Module 3: Building a Regression Model</h1>
+<h2 id="purpose">Purpose</h2>
+<p>This module teaches how to draw a regression model in SmartPLS 4 and specify the dependent variable, predictors, controls, and intercept.</p>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>After this module, learners should be able to:</p>
+<ul>
+<li>Create a graphical regression model.</li>
+<li>Add a dependent variable and independent variables.</li>
+<li>Add controls.</li>
+<li>Include or remove the intercept intentionally.</li>
+<li>Save a clean model for reporting.</li>
+</ul>
+<h2 id="example-model">Example Model</h2>
+<p>Research question:</p>
+<pre><code class="language-text">Which factors predict student satisfaction with a digital learning platform?
+</code></pre>
+<p>Dependent variable:</p>
+<pre><code class="language-text">SATISFACTION
+</code></pre>
+<p>Predictors:</p>
+<pre><code class="language-text">USEFULNESS
+EASE_OF_USE
+TRUST
+SERVICE_QUALITY
+</code></pre>
+<p>Controls:</p>
+<pre><code class="language-text">AGE
+EXPERIENCE
+GENDER_MALE
+</code></pre>
+<h2 id="smartpls-steps">SmartPLS Steps</h2>
+<ol>
+<li>Create a new project.</li>
+<li>Import the dataset.</li>
+<li>Create a new model.</li>
+<li>Add the dependent variable.</li>
+<li>Add independent variables.</li>
+<li>Draw arrows from predictors to the dependent variable.</li>
+<li>Keep the intercept unless your research design requires removing it.</li>
+<li>Save the model with a clear name.</li>
+</ol>
+<h2 id="intercept-rule">Intercept Rule</h2>
+<p>For most regression models, keep the intercept. Removing it changes the meaning of coefficients and is rarely appropriate unless theory and design justify a zero-intercept model.</p>
+<h2 id="model-documentation">Model Documentation</h2>
+<p>Record:</p>
+<ul>
+<li>Model name</li>
+<li>Dataset name</li>
+<li>Dependent variable</li>
+<li>Predictors</li>
+<li>Controls</li>
+<li>Whether intercept is included</li>
+<li>SmartPLS version</li>
+</ul>
+<h2 id="practice">Practice</h2>
+<p>Create two models:</p>
+<ol>
+<li>Simple model: <code>SATISFACTION &lt;- USEFULNESS</code></li>
+<li>Multiple model: <code>SATISFACTION &lt;- USEFULNESS + EASE_OF_USE + TRUST + SERVICE_QUALITY + AGE + EXPERIENCE</code></li>
+</ol>
+<h2 id="lab">Lab</h2>
+<p>Complete <a href="../labs/lab02-linear-regression.html">Lab 2: Build and run a SmartPLS regression model</a>.</p>
+<h2 id="next-module">Next Module</h2>
+<p>Continue to <a href="04-running-linear-regression.html">Module 4: Running Linear Regression</a>.</p>
+    </main>
+  </div>
+  <footer class="page-footer">
+    Regression in SmartPLS 4.0. Created by Mahbub Hassan.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Six-Stage Regression Workflow | SmartPLS 4 Regression Course</title>
+  <link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="../index.html">Regression in SmartPLS 4.0</a>
+      <nav class="top-links" aria-label="Primary navigation">
+        <a href="../syllabus.html">Syllabus</a>
+        <a href="../modules/01-smartpls-regression-workflow.html">Modules</a>
+        <a href="../paper-guide/README.html">Paper Track</a>
+        <a href="https://github.com/mahbubchula/SmartPLS4-Regression-Results-Reporting">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <div class="page-shell">
+
+      <aside class="sidebar">
+        <p class="sidebar-title">Course Navigation</p>
+        <nav>
+        <a href="../index.html">Course Home</a>
+        <a href="../syllabus.html">Syllabus</a>
+        <a href="../README.html">Course README</a>
+        <a href="../modules/01-smartpls-regression-workflow.html">Module 1</a>
+        <a href="../modules/05-assessing-regression-results.html">Module 5</a>
+        <a href="../modules/07-reporting-regression-results.html">Module 7</a>
+        <a href="../modules/13-logistic-regression-smartpls.html">Module 13</a>
+        <a href="../labs/lab01-import-data-project.html">Lab 1</a>
+        <a href="../paper-guide/README.html">Paper Track</a>
+        <a href="../case-study/results-assessment-workbook.html">Assessment Workbook</a>
+        <a href="../templates/regression-results-report-template.html">Report Template</a>
+        </nav>
+      </aside>
+    <main class="lesson">
+<h1 id="six-stage-regression-workflow">Six-Stage Regression Workflow</h1>
+<p>The shared paper follows the regression workflow from Hair et al. This course turns that workflow into a practical SmartPLS checklist.</p>
+<h2 id="stage-1-select-the-objective">Stage 1: Select the Objective</h2>
+<p>Decide whether the analysis is for:</p>
+<ul>
+<li>Explanation</li>
+<li>Prediction</li>
+<li>Both explanation and prediction</li>
+</ul>
+<p>Output:</p>
+<pre><code class="language-text">Research objective statement
+</code></pre>
+<p>Example:</p>
+<pre><code class="language-text">The objective is to explain customer satisfaction using customer perceptions of product quality, e-commerce, complaint resolution, product line, and salesforce image.
+</code></pre>
+<h2 id="stage-2-design-the-regression-analysis">Stage 2: Design the Regression Analysis</h2>
+<p>Define:</p>
+<ul>
+<li>Dependent variable</li>
+<li>Independent variables</li>
+<li>Controls</li>
+<li>Sample size</li>
+<li>Measurement level</li>
+<li>Linear or logistic regression</li>
+</ul>
+<p>Output:</p>
+<pre><code class="language-text">Model specification table
+</code></pre>
+<h2 id="stage-3-test-assumptions">Stage 3: Test Assumptions</h2>
+<p>For multiple linear regression, check:</p>
+<ul>
+<li>Linearity in parameters</li>
+<li>Random sampling</li>
+<li>No perfect multicollinearity</li>
+<li>Exogeneity</li>
+<li>Homoscedasticity</li>
+<li>Independence of residuals</li>
+<li>Approximate normality of residuals for inference</li>
+</ul>
+<p>For logistic regression, check:</p>
+<ul>
+<li>Binary dependent variable</li>
+<li>Independent observations</li>
+<li>No perfect multicollinearity</li>
+<li>Linearity between predictors and log-odds</li>
+<li>Adequate sample size</li>
+</ul>
+<p>Output:</p>
+<pre><code class="language-text">Assumption assessment table
+</code></pre>
+<h2 id="stage-4-estimate-the-model-and-assess-overall-fit">Stage 4: Estimate the Model and Assess Overall Fit</h2>
+<p>For multiple linear regression, assess:</p>
+<ul>
+<li>ANOVA or F-test</li>
+<li>R-square</li>
+<li>Adjusted R-square</li>
+<li>Durbin-Watson test if relevant</li>
+<li>Residual plots</li>
+</ul>
+<p>For logistic regression, assess:</p>
+<ul>
+<li>Log-likelihood</li>
+<li>Deviance</li>
+<li>AIC</li>
+<li>BIC</li>
+<li>McFadden's R-square</li>
+<li>Cox and Snell's R-square</li>
+<li>Nagelkerke's R-square</li>
+<li>Confusion matrix</li>
+</ul>
+<p>Output:</p>
+<pre><code class="language-text">Model fit assessment table
+</code></pre>
+<h2 id="stage-5-interpret-the-regression-variate">Stage 5: Interpret the Regression Variate</h2>
+<p>For multiple linear regression, interpret:</p>
+<ul>
+<li>Unstandardized coefficients</li>
+<li>Standardized coefficients</li>
+<li>t-values</li>
+<li>p-values</li>
+<li>Confidence intervals</li>
+<li>Relative importance</li>
+</ul>
+<p>For logistic regression, interpret:</p>
+<ul>
+<li>Logit coefficients</li>
+<li>Wald test</li>
+<li>p-values</li>
+<li>Odds ratios</li>
+<li>Direction of group membership probability</li>
+</ul>
+<p>Output:</p>
+<pre><code class="language-text">Hypothesis decision table
+</code></pre>
+<h2 id="stage-6-validate-the-results">Stage 6: Validate the Results</h2>
+<p>Validation can include:</p>
+<ul>
+<li>Holdout sample</li>
+<li>Cross-validation</li>
+<li>Prediction accuracy</li>
+<li>Sensitivity checks</li>
+<li>Robust standard errors</li>
+<li>Alternative model specification</li>
+</ul>
+<p>Output:</p>
+<pre><code class="language-text">Validation and limitation paragraph
+</code></pre>
+<h2 id="final-course-deliverable">Final Course Deliverable</h2>
+<p>At the end of the workflow, students should produce:</p>
+<ul>
+<li>Model diagram</li>
+<li>Exported SmartPLS tables</li>
+<li>Assumption checklist</li>
+<li>Model fit table</li>
+<li>Coefficient table</li>
+<li>Written result section</li>
+<li>Limitations paragraph</li>
+</ul>
+    </main>
+  </div>
+  <footer class="page-footer">
+    Regression in SmartPLS 4.0. Created by Mahbub Hassan.
+  </footer>
+</body>
+</html>

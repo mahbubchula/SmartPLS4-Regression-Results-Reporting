@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignment 5: Paper-Based HBAT SmartPLS Case | SmartPLS 4 Regression Course</title>
+  <link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="../index.html">Regression in SmartPLS 4.0</a>
+      <nav class="top-links" aria-label="Primary navigation">
+        <a href="../syllabus.html">Syllabus</a>
+        <a href="../modules/01-smartpls-regression-workflow.html">Modules</a>
+        <a href="../paper-guide/README.html">Paper Track</a>
+        <a href="https://github.com/mahbubchula/SmartPLS4-Regression-Results-Reporting">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <div class="page-shell">
+
+      <aside class="sidebar">
+        <p class="sidebar-title">Course Navigation</p>
+        <nav>
+        <a href="../index.html">Course Home</a>
+        <a href="../syllabus.html">Syllabus</a>
+        <a href="../README.html">Course README</a>
+        <a href="../modules/01-smartpls-regression-workflow.html">Module 1</a>
+        <a href="../modules/05-assessing-regression-results.html">Module 5</a>
+        <a href="../modules/07-reporting-regression-results.html">Module 7</a>
+        <a href="../modules/13-logistic-regression-smartpls.html">Module 13</a>
+        <a href="../labs/lab01-import-data-project.html">Lab 1</a>
+        <a href="../paper-guide/README.html">Paper Track</a>
+        <a href="../case-study/results-assessment-workbook.html">Assessment Workbook</a>
+        <a href="../templates/regression-results-report-template.html">Report Template</a>
+        </nav>
+      </aside>
+    <main class="lesson">
+<h1 id="assignment-5-paper-based-hbat-smartpls-case">Assignment 5: Paper-Based HBAT SmartPLS Case</h1>
+<h2 id="goal">Goal</h2>
+<p>Use the shared SmartPLS 4 regression tutorial paper as a model and complete both multiple linear regression and logistic regression analysis.</p>
+<h2 id="dataset">Dataset</h2>
+<p>Use:</p>
+<pre><code class="language-text">datasets/hbat_smartpls_regression_case.csv
+</code></pre>
+<h2 id="part-a-multiple-linear-regression">Part A: Multiple Linear Regression</h2>
+<p>Model:</p>
+<pre><code class="language-text">X19 &lt;- X6 + X7 + X9 + X11 + X12
+</code></pre>
+<p>Tasks:</p>
+<ol>
+<li>Build the model in SmartPLS 4.</li>
+<li>Run regression.</li>
+<li>Export ANOVA/model fit output.</li>
+<li>Export R-square and adjusted R-square.</li>
+<li>Export coefficients and standardized coefficients.</li>
+<li>Check collinearity.</li>
+<li>Check residual assumptions using SmartPLS plots/tests.</li>
+<li>Write a results paragraph.</li>
+</ol>
+<h2 id="part-b-logistic-regression">Part B: Logistic Regression</h2>
+<p>Model:</p>
+<pre><code class="language-text">X4 &lt;- X6 + X7 + X8 + X9 + X10 + X11 + X12 + X13 + X14 + X15 + X16 + X17 + X18
+</code></pre>
+<p>Tasks:</p>
+<ol>
+<li>Build the model in SmartPLS 4.</li>
+<li>Run logistic regression.</li>
+<li>Export fit summary.</li>
+<li>Export pseudo R-square values.</li>
+<li>Export confusion matrix.</li>
+<li>Export coefficients and Wald tests.</li>
+<li>Calculate or export odds ratios.</li>
+<li>Write a logistic regression results paragraph.</li>
+</ol>
+<h2 id="deliverable">Deliverable</h2>
+<p>Submit a complete paper-style report with:</p>
+<ul>
+<li>Model diagrams</li>
+<li>Exported SmartPLS result tables</li>
+<li>Linear regression assessment workbook</li>
+<li>Logistic regression assessment checklist</li>
+<li>Final results section</li>
+<li>Limitation paragraph</li>
+<li>SmartPLS citation</li>
+</ul>
+<h2 id="rubric">Rubric</h2>
+<table>
+<thead>
+<tr>
+<th>Criterion</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Correct SmartPLS model setup</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td>Linear regression assessment</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td>Logistic regression assessment</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td>Assumption and diagnostic discussion</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td>Results reporting quality</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td>Reproducibility and exported evidence</td>
+<td style="text-align: right;">10</td>
+</tr>
+</tbody>
+</table>
+    </main>
+  </div>
+  <footer class="page-footer">
+    Regression in SmartPLS 4.0. Created by Mahbub Hassan.
+  </footer>
+</body>
+</html>

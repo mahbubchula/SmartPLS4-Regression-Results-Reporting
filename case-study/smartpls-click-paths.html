@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SmartPLS Click Path Guide | SmartPLS 4 Regression Course</title>
+  <link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="../index.html">Regression in SmartPLS 4.0</a>
+      <nav class="top-links" aria-label="Primary navigation">
+        <a href="../syllabus.html">Syllabus</a>
+        <a href="../modules/01-smartpls-regression-workflow.html">Modules</a>
+        <a href="../paper-guide/README.html">Paper Track</a>
+        <a href="https://github.com/mahbubchula/SmartPLS4-Regression-Results-Reporting">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <div class="page-shell">
+
+      <aside class="sidebar">
+        <p class="sidebar-title">Course Navigation</p>
+        <nav>
+        <a href="../index.html">Course Home</a>
+        <a href="../syllabus.html">Syllabus</a>
+        <a href="../README.html">Course README</a>
+        <a href="../modules/01-smartpls-regression-workflow.html">Module 1</a>
+        <a href="../modules/05-assessing-regression-results.html">Module 5</a>
+        <a href="../modules/07-reporting-regression-results.html">Module 7</a>
+        <a href="../modules/13-logistic-regression-smartpls.html">Module 13</a>
+        <a href="../labs/lab01-import-data-project.html">Lab 1</a>
+        <a href="../paper-guide/README.html">Paper Track</a>
+        <a href="../case-study/results-assessment-workbook.html">Assessment Workbook</a>
+        <a href="../templates/regression-results-report-template.html">Report Template</a>
+        </nav>
+      </aside>
+    <main class="lesson">
+<h1 id="smartpls-click-path-guide">SmartPLS Click Path Guide</h1>
+<p>This guide translates the shared paper into practical SmartPLS 4 menu steps.</p>
+<h2 id="a-import-the-hbat-style-dataset">A. Import the HBAT-Style Dataset</h2>
+<ol>
+<li>Open SmartPLS 4.</li>
+<li>Create a new project.</li>
+<li>Import <code>datasets/hbat_smartpls_regression_case.csv</code>.</li>
+<li>Confirm that <code>X1</code> to <code>X23</code> are visible.</li>
+<li>Save the project.</li>
+</ol>
+<h2 id="b-build-the-multiple-linear-regression-model">B. Build the Multiple Linear Regression Model</h2>
+<ol>
+<li>Create a new model.</li>
+<li>Add <code>X19</code> as the dependent variable.</li>
+<li>Add <code>X6</code>, <code>X7</code>, <code>X9</code>, <code>X11</code>, and <code>X12</code> as independent variables.</li>
+<li>Draw arrows from each independent variable to <code>X19</code>.</li>
+<li>Keep the intercept in the model unless your instructor asks for a no-intercept model.</li>
+<li>Save the model as <code>HBAT Linear Regression</code>.</li>
+</ol>
+<h2 id="c-run-multiple-linear-regression">C. Run Multiple Linear Regression</h2>
+<ol>
+<li>Select <code>Calculate</code>.</li>
+<li>Choose <code>Regression</code>.</li>
+<li>Use a two-tailed test unless you pre-specified directional hypotheses.</li>
+<li>Use a 0.05 significance level.</li>
+<li>Start with normal standard errors.</li>
+<li>If diagnostics suggest heteroscedasticity or leverage concerns, compare HC3 or HC4 robust standard errors.</li>
+<li>Tick <code>Open report</code>.</li>
+<li>Start calculation.</li>
+</ol>
+<h2 id="d-export-linear-regression-results">D. Export Linear Regression Results</h2>
+<p>Export:</p>
+<ul>
+<li>ANOVA or model summary</li>
+<li>R-square and adjusted R-square</li>
+<li>Coefficients</li>
+<li>Standardized coefficients</li>
+<li>VIF values</li>
+<li>Condition index</li>
+<li>Predicted vs residual plot</li>
+<li>Predicted vs actual plot</li>
+<li>Breusch-Pagan test</li>
+<li>Durbin-Watson test</li>
+<li>QQ plot</li>
+<li>Residual histogram</li>
+</ul>
+<h2 id="e-build-the-logistic-regression-model">E. Build the Logistic Regression Model</h2>
+<ol>
+<li>Create a new model.</li>
+<li>Add <code>X4</code> as the binary dependent variable.</li>
+<li>Add <code>X6</code> to <code>X18</code> as independent variables.</li>
+<li>Draw arrows from all independent variables to <code>X4</code>.</li>
+<li>Save the model as <code>HBAT Logistic Regression</code>.</li>
+</ol>
+<h2 id="f-run-logistic-regression">F. Run Logistic Regression</h2>
+<ol>
+<li>Select <code>Calculate</code>.</li>
+<li>Choose <code>Logistic Regression</code>.</li>
+<li>Use default maximum iteration and stop criterion settings unless convergence fails.</li>
+<li>Use a two-tailed test and 0.05 significance level unless the study design justifies another choice.</li>
+<li>Tick <code>Open report</code>.</li>
+<li>Start calculation.</li>
+</ol>
+<h2 id="g-export-logistic-regression-results">G. Export Logistic Regression Results</h2>
+<p>Export:</p>
+<ul>
+<li>Fit summary</li>
+<li>Log-likelihood</li>
+<li>Deviance</li>
+<li>AIC</li>
+<li>BIC</li>
+<li>McFadden's R-square</li>
+<li>Cox and Snell's R-square</li>
+<li>Nagelkerke's R-square</li>
+<li>Confusion matrix</li>
+<li>Coefficients</li>
+<li>Wald test</li>
+<li>Odds ratios or exponential coefficients if available</li>
+</ul>
+<h2 id="h-reporting-rule">H. Reporting Rule</h2>
+<p>Do not paste SmartPLS output alone. Convert every exported table into:</p>
+<ul>
+<li>What was assessed</li>
+<li>What criterion was used</li>
+<li>What result was obtained</li>
+<li>What it means for the research question</li>
+</ul>
+    </main>
+  </div>
+  <footer class="page-footer">
+    Regression in SmartPLS 4.0. Created by Mahbub Hassan.
+  </footer>
+</body>
+</html>

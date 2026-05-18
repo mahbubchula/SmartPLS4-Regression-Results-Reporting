@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dataset Codebook | SmartPLS 4 Regression Course</title>
+  <link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="../index.html">Regression in SmartPLS 4.0</a>
+      <nav class="top-links" aria-label="Primary navigation">
+        <a href="../syllabus.html">Syllabus</a>
+        <a href="../modules/01-smartpls-regression-workflow.html">Modules</a>
+        <a href="../paper-guide/README.html">Paper Track</a>
+        <a href="https://github.com/mahbubchula/SmartPLS4-Regression-Results-Reporting">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <div class="page-shell">
+
+      <aside class="sidebar">
+        <p class="sidebar-title">Course Navigation</p>
+        <nav>
+        <a href="../index.html">Course Home</a>
+        <a href="../syllabus.html">Syllabus</a>
+        <a href="../README.html">Course README</a>
+        <a href="../modules/01-smartpls-regression-workflow.html">Module 1</a>
+        <a href="../modules/05-assessing-regression-results.html">Module 5</a>
+        <a href="../modules/07-reporting-regression-results.html">Module 7</a>
+        <a href="../modules/13-logistic-regression-smartpls.html">Module 13</a>
+        <a href="../labs/lab01-import-data-project.html">Lab 1</a>
+        <a href="../paper-guide/README.html">Paper Track</a>
+        <a href="../case-study/results-assessment-workbook.html">Assessment Workbook</a>
+        <a href="../templates/regression-results-report-template.html">Report Template</a>
+        </nav>
+      </aside>
+    <main class="lesson">
+<h1 id="dataset-codebook">Dataset Codebook</h1>
+<p>Dataset:</p>
+<pre><code class="language-text">smartpls_regression_training_data.csv
+</code></pre>
+<p>The dataset is synthetic and intended only for teaching SmartPLS workflows.</p>
+<h2 id="observed-regression-variables">Observed Regression Variables</h2>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Label</th>
+<th>Type</th>
+<th>Coding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td>Case ID</td>
+<td>Identifier</td>
+<td>1 to 160</td>
+</tr>
+<tr>
+<td>SATISFACTION</td>
+<td>Overall satisfaction</td>
+<td>Dependent variable</td>
+<td>1 to 100</td>
+</tr>
+<tr>
+<td>USEFULNESS</td>
+<td>Perceived usefulness composite</td>
+<td>Predictor</td>
+<td>20 to 100</td>
+</tr>
+<tr>
+<td>EASE_OF_USE</td>
+<td>Perceived ease of use composite</td>
+<td>Predictor</td>
+<td>20 to 100</td>
+</tr>
+<tr>
+<td>TRUST</td>
+<td>Trust composite</td>
+<td>Predictor</td>
+<td>20 to 100</td>
+</tr>
+<tr>
+<td>SERVICE_QUALITY</td>
+<td>Service quality composite</td>
+<td>Predictor</td>
+<td>20 to 100</td>
+</tr>
+<tr>
+<td>AGE</td>
+<td>Respondent age</td>
+<td>Control</td>
+<td>Years</td>
+</tr>
+<tr>
+<td>EXPERIENCE</td>
+<td>Prior platform experience</td>
+<td>Control</td>
+<td>Years</td>
+</tr>
+<tr>
+<td>GENDER_MALE</td>
+<td>Gender dummy</td>
+<td>Control</td>
+<td>1 = male, 0 = otherwise</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pls-sem-indicator-variables">PLS-SEM Indicator Variables</h2>
+<table>
+<thead>
+<tr>
+<th>Construct</th>
+<th>Indicators</th>
+<th>Scale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PU</td>
+<td>PU1, PU2, PU3</td>
+<td>1 to 5 Likert</td>
+</tr>
+<tr>
+<td>PEOU</td>
+<td>PEOU1, PEOU2, PEOU3</td>
+<td>1 to 5 Likert</td>
+</tr>
+<tr>
+<td>TRUST</td>
+<td>TR1, TR2, TR3</td>
+<td>1 to 5 Likert</td>
+</tr>
+<tr>
+<td>SERVICE_QUALITY</td>
+<td>SQ1, SQ2, SQ3</td>
+<td>1 to 5 Likert</td>
+</tr>
+<tr>
+<td>SATISFACTION</td>
+<td>SAT1, SAT2, SAT3</td>
+<td>1 to 5 Likert</td>
+</tr>
+</tbody>
+</table>
+<h2 id="suggested-regression-model">Suggested Regression Model</h2>
+<pre><code class="language-text">SATISFACTION &lt;- USEFULNESS + EASE_OF_USE + TRUST + SERVICE_QUALITY + AGE + EXPERIENCE + GENDER_MALE
+</code></pre>
+<h2 id="suggested-pls-sem-structural-model">Suggested PLS-SEM Structural Model</h2>
+<pre><code class="language-text">PU -&gt; SATISFACTION
+PEOU -&gt; SATISFACTION
+TRUST -&gt; SATISFACTION
+SERVICE_QUALITY -&gt; SATISFACTION
+PEOU -&gt; PU
+</code></pre>
+    </main>
+  </div>
+  <footer class="page-footer">
+    Regression in SmartPLS 4.0. Created by Mahbub Hassan.
+  </footer>
+</body>
+</html>
